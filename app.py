@@ -8,6 +8,14 @@ model = pickle.load(open("university_recommendations.pkl", "rb"))
 
 @flask_app.route("/")
 def Home():
+    return render_template("login.html")
+
+@flask_app.route("/clg_details")
+def clg_details():
+    return render_template("clg_details.html")
+
+@flask_app.route("/clg_predict")
+def clg_predict():
     return render_template("index.html")
 
 @flask_app.route("/predict", methods = ["POST"])
