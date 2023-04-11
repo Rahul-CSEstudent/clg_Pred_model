@@ -9,11 +9,11 @@
 .btn-primary:hover, .btn-primary:active, .btn-primary.active, .btn-primary.disabled, .btn-primary[disabled] { filter: none; background-color: #27a327; }
 .btn-block { width: 100%; display:block; }
 
-* { -webkit-box-sizing:border-box; -moz-box-sizing:border-box; -ms-box-sizing:border-box; -o-box-sizing:border-box; box-sizing:border-box; }
+/* * { -webkit-box-sizing:border-box; -moz-box-sizing:border-box; -ms-box-sizing:border-box; -o-box-sizing:border-box; box-sizing:border-box; }
 
-html { width: 100%; height:100%; overflow:hidden; }
+html { width: 100%; height:100%; overflow:hidden; } */
 
-body { 
+.login { 
 	width: 100%;
 	height:100%;
 	min-height: 100vh;
@@ -27,11 +27,6 @@ body {
         font-family: sans-serif;
 
 }
-.login { 
-	position: absolute;
-	height:400px;
-}
-
 .login h1 { color: #000;  letter-spacing:1px; text-align:center; }
 
 input { 

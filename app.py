@@ -18,6 +18,10 @@ def clg_details():
 def clg_predict():
     return render_template("index.html")
 
+@flask_app.route("/clg_india")
+def clg_india():
+    return render_template("clg_ped_ind.html")
+
 @flask_app.route("/predict", methods = ["POST"])
 def predict():
     float_features = [float(x) for x in request.form.values()]

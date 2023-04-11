@@ -9,18 +9,22 @@
     *{
       margin: 0;
       padding: 0;
-      box-sizing: border-box;
     }
     body{
       min-height: 100vh;
+      min-width: 100vw;
       background-color: #eeef;
       display: flex;
+      align-items: center;
+      justify-content: center;
       font-family: sans-serif;
     }
     .container{
       width: 500px;
-      max-width: 90%;
       margin: auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
     .container form{
       width: 100%;
@@ -85,5 +89,8 @@
       <input type="submit" class="btn" value="Login">
     </form>
   </div>
+  <script>
+    document.querySelector("#rootReactVNB").remove();
+  </script>
 </body>
 </html>
