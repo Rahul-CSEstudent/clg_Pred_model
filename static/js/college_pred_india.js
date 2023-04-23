@@ -2318,7 +2318,6 @@ form.addEventListener('submit', function(event) {
     // Find the respective details in the JSON data
     const details = data[Clg_name];
     console.log(details)
-    console.log(details.Country)
     // Get a reference to the <div> element where we want to add the data
     const dataDiv = document.getElementById('data');
 
@@ -2326,12 +2325,14 @@ form.addEventListener('submit', function(event) {
         const dataElement = document.createElement('p');
         //displa
         dataElement.innerHTML = `
+        <h3>The College your are most likely to get is:</h3>
             <b>institute_id                    </b>:${details.institute_id}
         <br><b>name        </b>: ${details.name}
         <br><b>perception</b>: ${details.perception}
         <br><b>city          </b>: ${details.city}
         <br><b>state         </b>: ${details.state}
-        <br><b>Rank                 </b>: ${details.Rank}`;
+        <br><b>Rank                 </b>: ${details.Rank}
+        <br><b>course_id         </b>: MBA`;
         dataDiv.appendChild(dataElement);
       } else {
         dataDiv.innerHTML = 'Person not found';

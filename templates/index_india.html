@@ -73,7 +73,7 @@
 	  <div class="logo"><a href="#">HIGTER</a> </div>
 		<div class="navdiv">
 			<ul>
-				<li><a href="/clg_predict_india">Indian Colleges</a></li>
+                <li><a href="/clg_predict_india">Indian Colleges</a></li>
 				<li><a href="/clg_predict">Foreign Colleges</a></li>
 				<li><a href="/clg_india">Know your college</a></li>
 				<li><a href="/clg_details">College Details</a></li>
@@ -81,15 +81,15 @@
 		</div>
 	</nav>
  <div class="login">
-	<h1>Foreign College Prediction Model</h1>
+	<h1>Indian College Prediction Model</h1>
 
      <!-- Main Input For Receiving Query to our ML -->
-     <form action="{{ url_for('predict')}}"method="post">
-    	<input type="text" name="GRE Score" placeholder="GRE Score" required="required" />
-        <input type="text" name="TOFEL Score" placeholder="TOFEL Score" required="required" />
+    <form id="myForm">
+    	<input type="text" name="Tancet" placeholder="TANCET Score" required="required" />
+        <input type="text" name="Cheetah Score" placeholder="Cheetah Score" required="required" />
 		<input type="text" name="SOP" placeholder="SOP" required="required" />
 		<input type="text" name="LOR" placeholder="LOR" required="required" />
-    <input type="text" name="CGPA" placeholder="CGPA" required="required" />
+        <input type="text" name="CGPA" placeholder="CGPA" required="required" />
 		<input type="text" name="Research" placeholder="Research" required="required" />
 
         <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
@@ -97,10 +97,10 @@
 
    <br>
    <br>
-   <p class="pred">{{ prediction_text}}
-   </p>
-
+   <div id="data"></div>
  </div>
+
+ <script src="{{url_for('static', filename='js/indian_prediction.js')}}"></script>
 
 
 </body>
