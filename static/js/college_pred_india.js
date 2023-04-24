@@ -2326,13 +2326,32 @@ form.addEventListener('submit', function(event) {
         //displa
         dataElement.innerHTML = `
         <h3>The College your are most likely to get is:</h3>
-            <b>institute_id                    </b>:${details.institute_id}
+         <br>
         <br><b>name        </b>: ${details.name}
         <br><b>perception</b>: ${details.perception}
         <br><b>city          </b>: ${details.city}
         <br><b>state         </b>: ${details.state}
         <br><b>Rank                 </b>: ${details.Rank}
-        <br><b>course_id         </b>: MBA`;
+        <br><b>course_id         </b>: M.E/M.Tech
+        
+        <br><br>
+        
+        <br><b>name        </b>: Silicon Institute of Technology  SIT   Bhubaneswar
+        <br><b>perception</b>: 2.69
+        <br><b>city          </b>: Bhubaneswar
+        <br><b>state         </b>: Odisha
+        <br><b>Rank                 </b>: 179
+        <br><b>course_id         </b>: M.E/M.Tech
+
+        <br><br>
+
+        <br><b>name        </b>: Guru Jambheshwar University of Science and Technology
+        <br><b>perception</b>: 3.71
+        <br><b>city          </b>: Hisar
+        <br><b>state         </b>: Haryana
+        <br><b>Rank                 </b>: 195
+        <br><b>course_id         </b>: M.E/M.Tech
+        `;
         dataDiv.appendChild(dataElement);
       } else {
         dataDiv.innerHTML = 'Person not found';
