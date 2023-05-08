@@ -10,7 +10,11 @@
 <link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
 <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
-  
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Gloock&family=Orbitron:wght@400;500;600;700;800;900&family=Poppins:wght@400;500;700;800&display=swap" rel="stylesheet">
+
+
 </head>
 <style>
 	body{
@@ -23,8 +27,8 @@
 			box-sizing: border-box;
 		}
 		.navbar{
-			background: #27a327; 
-			height: 5rem;
+			background: #3b5998; 
+			height: 100px;
 			display: flex;
 			align-items: center;
 			justify-content: space-between;
@@ -42,7 +46,8 @@
 		}
 		.logo a{
 			text-align: center;
-      color: #222;
+      color: #ffff;
+	  font-family: orbitron;
       margin-bottom: 20px;
       font-size: 44px;
       font-weight: 900;
@@ -52,6 +57,7 @@
 		}
 		li a{
 			color: white; font-size: 24px; font-weight: bold; margin-right: 25px;
+			font-family: orbitron;
 		}
 		button{
 			background-color: black; margin-left: 10px; border-radius: 10px; padding: 10px; width: 90px;
@@ -62,6 +68,14 @@
 		.login {
 			width: 100vw;
 			height: 100vh;
+		}
+
+		.login button{
+			height: 50px;
+			border-radius: 50px;
+		}
+		.login h1{
+			font-family: orbitron;
 		}
 		.pred{
 			font-size: 30px; font-weight: bold; color: black; margin-left: 10px;
@@ -85,6 +99,7 @@
 
      <!-- Main Input For Receiving Query to our ML -->
      <form action="{{ url_for('predict')}}"method="post">
+		<input type="text" placeholder="college Name"/>
     	<input type="text" name="GRE Score" placeholder="GRE Score" required="required" />
         <input type="text" name="TOFEL Score" placeholder="TOFEL Score" required="required" />
 		<input type="text" name="SOP" placeholder="SOP" required="required" />

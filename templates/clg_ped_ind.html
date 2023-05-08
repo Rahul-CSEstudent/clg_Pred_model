@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Gloock&family=Orbitron:wght@400;500;600;700;800;900&family=Poppins:wght@400;500;700;800&display=swap" rel="stylesheet">
+
+  
     <title>Document</title>
     <style>
       *{
@@ -23,11 +28,12 @@
 		  }
 
 		  .navbar{
-			  background: #27a327; 
+			  background: #3b5998; 
         height: 100px;
         font-family: calibri; padding-right: 25px;padding-left: 25px;
         padding-top: 20px;
         z-index: 10;
+        font-family: orbitron;
 	  	}
 
 		  .navdiv{
@@ -36,9 +42,10 @@
 
 		  .logo a{
 		  	text-align: center;
-        color: #222;
+        color: #ffff;
         margin-bottom: 20px;
         font-size: 44px;
+        font-family: orbitron;
         font-weight: 900;
 		  }
 
@@ -48,6 +55,7 @@
 
 		  li a{
 			  color: white; font-size: 24px; font-weight: bold; margin-right: 25px;
+        font-family: orbitron;
 		  }
 
 		  button{
@@ -81,6 +89,7 @@
         text-align: center;
         color: #222;
         margin-bottom: 20px;
+        font-family: orbitron;
       }
 
       #myForm input{
@@ -97,7 +106,7 @@
         margin-left: 50%;
         transform: translateX(-50%);
         width: 120px;
-        height: 34px;
+        height: 50px;
         border: none;
         outline: none;
         background: #27a327;
@@ -105,7 +114,7 @@
         font-size: 16px;
         text-transform: uppercase;
         color: #fff;
-        border-radius: 4px;
+        border-radius: 50px;
         transition: all 0.3s ease;
       }
 
@@ -187,6 +196,11 @@
     font-size: 18px;
     color: #333;
 }
+#data{
+  max-height: 300px;
+  overflow: scroll;
+  margin-bottom: 100px;
+}
 
       </style>
 </head>
@@ -208,30 +222,29 @@
         
         <label for="name"><div class="select-menu">
           <div class="select-btn">
-              <span class="sBtn-text">Select your option ⬇️</span>
+              <span id="score" class="sBtn-text">Select your option ⬇️</span>
               <i class="bx bx-chevron-down"></i>
           </div>
   
           <ul class="options">
-              <li class="option">
-                  <i class="bx bxl-github" style="color: #171515;"></i>
-                  <span class="option-text">Cat - MBA</span>
-              </li>
-              <li class="option">
-                  <i class="bx bxl-instagram-alt" style="color: #E1306C;"></i>
-                  <span class="option-text">GATE - M.E/M.Tech</span>
-              </li>
-              <li class="option">
-                <i class="bx bxl-instagram-alt" style="color: #E1306C;"></i>
-                <span class="option-text">CMAT - MBA</span>
+            <li class="option">
+                <i class="bx bxl-github" style="color: #171515;"></i>
+                <span class="option-text">Cat - MBA</span>
             </li>
-          </ul>
+            <li class="option">
+                <i class="bx bxl-instagram-alt" style="color: #E1306C;"></i>
+                <span class="option-text">GATE - M.E/M.tech</span>
+            </li>
+            <li class="option">
+              <i class="bx bxl-instagram-alt" style="color: #E1306C;"></i>
+              <span class="option-text">CMAT - MBA</span>
+          </li>
+        </ul>
       </div></label>
         <input type="float" id="name" name="name">
         <label for="name">CGPA :</label>
         <input type="float" id="other" name="percentage">
-        <label for="name">Cutoff :</label>
-        <input type="float" id="other" name="Cutoff">
+      
         <br>
         <button type="submit">Submit</button>
       </form>

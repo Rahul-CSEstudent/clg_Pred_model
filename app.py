@@ -31,7 +31,8 @@ def predict():
     float_features = [float(x) for x in request.form.values()]
     features = [np.array(float_features)]
     prediction = model.predict(features)
-    return render_template("index.html", prediction_text = "The Chance of Admission in MIT is 90% , Illinois Institute of Technology is 89% and AVIT is 85%")
+    pred = str(prediction)
+    return render_template("index.html", prediction_text = "The Chance of getting Admission into that college is " +" " + pred)
 
 if __name__ == "__main__":
     flask_app.run(debug=True)

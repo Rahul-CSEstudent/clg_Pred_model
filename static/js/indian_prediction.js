@@ -9,8 +9,9 @@ form.addEventListener('submit', function(event) {
     const dataDiv = document.getElementById('data');
 
         const dataElement = document.createElement('p');
+        const val = Math.random();
         //displa
-        dataDiv.innerHTML = `<h2>The top 3 preffered college for you is NIT trichy 89%, VIT chennai 88% and BITS bilani 85%</h2>`;
+        dataDiv.innerHTML = `<h2>The chance of getting into that college is ${val}</h2>`;
         dataDiv.appendChild(dataElement);
 });
 

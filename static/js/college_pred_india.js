@@ -2324,6 +2324,7 @@ form.addEventListener('submit', function(event) {
     if (details) {
         const dataElement = document.createElement('p');
         //displa
+        const score = document.getElementById('score');
         dataElement.innerHTML = `
         <h3>The College your are most likely to get is:</h3>
          <br>
@@ -2332,7 +2333,7 @@ form.addEventListener('submit', function(event) {
         <br><b>city          </b>: ${details.city}
         <br><b>state         </b>: ${details.state}
         <br><b>Rank                 </b>: ${details.Rank}
-        <br><b>course_id         </b>: M.E/M.Tech
+        <br><b>course_id         </b>: ${score.innerHTML}
         
         <br><br>
         
@@ -2341,7 +2342,7 @@ form.addEventListener('submit', function(event) {
         <br><b>city          </b>: Bhubaneswar
         <br><b>state         </b>: Odisha
         <br><b>Rank                 </b>: 179
-        <br><b>course_id         </b>: M.E/M.Tech
+        <br><b>course_id         </b>: ${score.innerHTML}
 
         <br><br>
 
@@ -2350,7 +2351,7 @@ form.addEventListener('submit', function(event) {
         <br><b>city          </b>: Hisar
         <br><b>state         </b>: Haryana
         <br><b>Rank                 </b>: 195
-        <br><b>course_id         </b>: M.E/M.Tech
+        <br><b>course_id         </b>:  ${score.innerHTML}
         `;
         dataDiv.appendChild(dataElement);
       } else {
